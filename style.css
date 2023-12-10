@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Sunflower:wght@300;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 13px;
+  font-family: "Sunflower", "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--second);
+  scroll-behavior: smooth;
+}
+
+:root {
+  --prime: #6c584c;
+  --second: #ede0d4;
+}
+
+::selection {
+  background-color: var(--prime);
+  color: var(--second);
+}
+
+nav {
+  background-color: var(--prime);
+  color: var(--second);
+  padding: 1rem;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  gap: 3rem;
+}
+
+nav ul li a {
+  color: var(--second);
+  transition: all 250ms ease;
+  padding: .3rem 1rem;
+  border-radius: 1rem;
+}
+
+nav ul li a:hover {
+  text-decoration: none;
+  background-color: var(--second);
+  color: var(--prime);
+}
+
+.nav-logo {
+  height: 9rem;
+  width: auto;
+  margin-top: 7rem;
+  border: solid .3rem var(--second);
+  border-radius: 50%;
+  transition: all 400ms ease;
+}
+
+.nav-logo:hover {
+  transform: rotate(360deg);
+}
+
+.hero {
+  background-image: url("img/hero.jpg");
+  height: 92vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--second);
+}
+
+.hero .logo {
+  height: 10rem;
+  width: auto;
+}
+
+.hero a {
+  transition: all 400ms ease;
+}
+
+.hero a:hover {
+  transform: rotate(360deg);
+}
+
+.hero h1 {
+  font-size: 5rem;
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--prime);
+  border-radius: 1rem;
+  border: solid .3rem var(--second);
+}
+
+.hero p {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.section {
+  font-size: 1.3rem;
+  margin: 1rem 4rem;
+  text-align: justify;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section h2 {
+  background-color: var(--prime);
+  color: var(--second);
+  padding: .2rem 1rem;
+  border-radius: 2rem;
+}
+
+.grid {
+  width: 100%;
+  max-width: 100rem;
+  height: 100%;
+  display: grid;
+  gap: 2rem;
+  place-items: center;
+  grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+}
+
+.grid img {
+  width: 100%;
+  height: auto;
+  transition: all 250ms ease;
+  cursor: pointer;
+}
+
+.grid img:hover {
+  box-shadow: 1rem 1rem var(--prime);
+}
+
+.grid .gallery {
+  border: 0;
+  background-color: var(--prime);
+  color: var(--second);
+  font-family: "Sunflower", "Roboto", sans-serif;
+  font-size: 4rem;
+  padding: 0 3rem;
+  cursor: pointer;
+  transition: all 250ms ease;
+  border: solid .3rem var(--prime);
+  font-style: italic;
+  text-align: center;
+  text-decoration: none;
+}
+
+.grid .gallery:hover {
+  background-color: var(--second);
+  color: var(--prime);
+  border: solid .3rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  gap: .5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+form input {
+  font-family: "Sunflower", "Roboto", sans-serif;
+  border: 0;
+  padding: .2rem 1rem;
+  border-radius: 1rem;
+  font-size: 1.3rem;
+  width: 40rem;
+  height: 4rem;
+}
+
+form textarea {
+  font-family: "Sunflower", "Roboto", sans-serif;
+  resize: none;
+  font-size: 1.3rem;
+  border: 0;
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 40rem;
+  height: 17.5rem;
+}
+
+form button {
+  border: 0;
+  background-color: var(--prime);
+  color: white;
+  font-family: "Sunflower", "Roboto", sans-serif;
+  padding: .2rem 1.5rem;
+  font-size: 1.3rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  transition: all 250ms ease;
+  border: solid .3rem var(--prime)
+}
+
+form button:hover {
+  background-color: var(--second);
+  color: var(--prime);
+  border: solid .3rem;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: solid .2rem var(--prime);
+}
+
+form input::selection,
+form textarea::selection {
+  background-color: var(--prime);
+  color: white;
+}
+
+footer {
+  background-color: var(--prime);
+  padding: 1rem;
+  margin-top: 3rem;
+  color: var(--second);
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+footer p {
+  margin: 1rem;
+}
+
+footer a {
+  color: var(--second);
+  transition: all 250ms ease;
+  padding: .3rem .5rem;
+  border-radius: 1rem;
+}
+
+footer a:hover {
+  text-decoration: none;
+  background-color: var(--second);
+  color: var(--prime);
+}
+
+dialog {
+  border: 0;
+  padding: 0;
+  border-radius: 3rem;
+  background-color: var(--prime);
+  width: min(100%, 1000px);
+}
+
+dialog button {
+  color: white;
+  cursor: pointer;
+  background-color: var(--prime);
+  border-radius: 50%;
+  border: 0;
+  font-size: 3rem;
+  transition: all 250ms ease;
+  border: solid .3rem var(--prime);
+}
+
+dialog button.x {
+  position: absolute;
+  right: 2rem;
+  top: 1rem;
+  padding: .5rem 1rem;
+}
+
+dialog button.move-left {
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+  padding: .5rem 1.3rem .6rem 1.3rem;
+}
+
+dialog button.move-right {
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  padding: .5rem 1.3rem .6rem 1.3rem;
+}
+
+dialog button:hover {
+  background-color: transparent;
+  color: var(--prime);
+}
+
+dialog img {
+  width: 100%;
+  height: auto;
+}
+
+dialog p {
+  text-align: center;
+  background-color: var(--prime);
+  margin: 0;
+  padding: 2rem;
+  color: white;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 1062px) {
+  .form {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 924px) {
+  .grid {
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+  }
+
+  .section {
+    margin: 1.5rem;
+  }
+
+  .grid > img:hover {
+    box-shadow: .5rem .5rem var(--prime);
+  }
+}
+
+@media only screen and (max-width: 754px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+  
+  nav ul li {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 617px) {
+  .grid {
+    grid-template: repeat(6, 1fr) / 1fr;
+  }
+
+  .section {
+    margin: 1rem;
+  }
+
+  nav ul {
+    gap: 2rem;
+  }
+
+  form,
+  .form,
+  .inputs,
+  form input,
+  form textarea {
+    width: 100%;
+  }
+
+  dialog button {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  dialog button.x {
+    padding: .7rem 1rem;
+  }
+
+  dialog button.move-left,
+  dialog button.move-right {
+    padding: .7rem 1.3rem .9rem 1.3rem;
+  }
+}

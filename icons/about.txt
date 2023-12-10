@@ -1,0 +1,6 @@
+This favicon was generated using the following font:
+
+- Font Title: Passion One
+- Font Author: Copyright (c) 2011 Fontstage (info@fontstage.com), with Reserved Font Name "Passion"
+- Font Source: http://fonts.gstatic.com/s/passionone/v18/PbynFmL8HhTPqbjUzux3JHuW_Frg6YoV.ttf
+- Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))
