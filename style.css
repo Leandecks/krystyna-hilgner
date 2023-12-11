@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Sunflower:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap');
 
 * {
   box-sizing: border-box;
@@ -14,11 +15,13 @@ body {
   padding: 0;
   background-color: var(--second);
   scroll-behavior: smooth;
+  transition: all 400ms ease;
 }
 
 :root {
-  --prime: #6c584c;
-  --second: #ede0d4;
+  --prime: #285;
+  --light-prime: rgb(218, 248, 233);
+  --second: #fff;
 }
 
 ::selection {
@@ -51,7 +54,7 @@ nav ul li a {
   color: var(--second);
   transition: all 250ms ease;
   padding: .3rem 1rem;
-  border-radius: 1rem;
+  border-radius: .3rem;
 }
 
 nav ul li a:hover {
@@ -66,7 +69,9 @@ nav ul li a:hover {
   margin-top: 7rem;
   border: solid .3rem var(--second);
   border-radius: 50%;
-  transition: all 400ms ease;
+  padding: 1rem;
+  background-color: var(--prime);
+  transition: all 500ms ease;
 }
 
 .nav-logo:hover {
@@ -83,6 +88,7 @@ nav ul li a:hover {
   align-items: center;
   flex-direction: column;
   color: var(--second);
+  font-family: "Charm", "Sunflower", "Roboto", sans-serif;
 }
 
 .hero .logo {
@@ -103,7 +109,7 @@ nav ul li a:hover {
   text-align: center;
   padding: 2rem;
   background-color: var(--prime);
-  border-radius: 1rem;
+  border-radius: .75rem;
   border: solid .3rem var(--second);
 }
 
@@ -112,7 +118,8 @@ nav ul li a:hover {
   text-align: center;
 }
 
-.section {
+.section,
+.about-text {
   font-size: 1.3rem;
   margin: 1rem 4rem;
   text-align: justify;
@@ -125,7 +132,18 @@ nav ul li a:hover {
   background-color: var(--prime);
   color: var(--second);
   padding: .2rem 1rem;
-  border-radius: 2rem;
+  border-radius: .5rem;
+  font-family: "Charm", "Sunflower", "Roboto", sans-serif;
+}
+
+#about {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-img img {
+  width: 30rem;
+  height: auto;
 }
 
 .grid {
@@ -195,10 +213,11 @@ form input {
   font-family: "Sunflower", "Roboto", sans-serif;
   border: 0;
   padding: .2rem 1rem;
-  border-radius: 1rem;
+  border-radius: .5rem;
   font-size: 1.3rem;
   width: 40rem;
   height: 4rem;
+  background-color: var(--light-prime);
 }
 
 form textarea {
@@ -206,20 +225,21 @@ form textarea {
   resize: none;
   font-size: 1.3rem;
   border: 0;
-  border-radius: 1rem;
+  border-radius: .5rem;
   padding: 1rem;
   width: 40rem;
   height: 17.5rem;
+  background-color: var(--light-prime);
 }
 
 form button {
   border: 0;
   background-color: var(--prime);
-  color: white;
+  color: var(--second);
   font-family: "Sunflower", "Roboto", sans-serif;
   padding: .2rem 1.5rem;
   font-size: 1.3rem;
-  border-radius: 2rem;
+  border-radius: .5rem;
   cursor: pointer;
   transition: all 250ms ease;
   border: solid .3rem var(--prime)
@@ -234,12 +254,13 @@ form button:hover {
 form input:focus,
 form textarea:focus {
   outline: solid .2rem var(--prime);
+  background-color: var(--second);
 }
 
 form input::selection,
 form textarea::selection {
   background-color: var(--prime);
-  color: white;
+  color: var(--second);
 }
 
 footer {
@@ -259,7 +280,7 @@ footer a {
   color: var(--second);
   transition: all 250ms ease;
   padding: .3rem .5rem;
-  border-radius: 1rem;
+  border-radius: .2rem;
 }
 
 footer a:hover {
@@ -277,7 +298,7 @@ dialog {
 }
 
 dialog button {
-  color: white;
+  color: var(--second);
   cursor: pointer;
   background-color: var(--prime);
   border-radius: 50%;
@@ -323,7 +344,7 @@ dialog p {
   background-color: var(--prime);
   margin: 0;
   padding: 2rem;
-  color: white;
+  color: var(--second);
   font-size: 1.5rem;
 }
 
@@ -344,6 +365,10 @@ dialog p {
 
   .grid > img:hover {
     box-shadow: .5rem .5rem var(--prime);
+  }
+
+  #about {
+    flex-direction: column;
   }
 }
 
