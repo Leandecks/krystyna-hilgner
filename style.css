@@ -146,46 +146,25 @@ nav ul li a:hover {
   height: auto;
 }
 
-.grid {
-  width: 100%;
-  max-width: 100rem;
-  height: 100%;
-  display: grid;
-  gap: 2rem;
-  place-items: center;
-  grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+.needs-padding {
+  padding-bottom: 2rem;
 }
 
-.grid img {
-  width: 100%;
-  height: auto;
+.trainer-link {
+  color: var(--prime);
+  background-color: var(--second);
+  padding: 2rem 5rem;
+  font-size: 3rem;
+  text-decoration: none;
+  border-radius: .5rem;
+  border: solid var(--prime);
   transition: all 250ms ease;
-  cursor: pointer;
+  margin-bottom: 1rem;
 }
 
-.grid img:hover {
-  box-shadow: 1rem 1rem var(--prime);
-}
-
-.grid .gallery {
-  border: 0;
+.trainer-link:hover {
   background-color: var(--prime);
   color: var(--second);
-  font-family: "Sunflower", "Roboto", sans-serif;
-  font-size: 4rem;
-  padding: 0 3rem;
-  cursor: pointer;
-  transition: all 250ms ease;
-  border: solid .3rem var(--prime);
-  font-style: italic;
-  text-align: center;
-  text-decoration: none;
-}
-
-.grid .gallery:hover {
-  background-color: var(--second);
-  color: var(--prime);
-  border: solid .3rem;
 }
 
 form {
@@ -289,65 +268,6 @@ footer a:hover {
   color: var(--prime);
 }
 
-dialog {
-  border: 0;
-  padding: 0;
-  border-radius: 3rem;
-  background-color: var(--prime);
-  width: min(100%, 1000px);
-}
-
-dialog button {
-  color: var(--second);
-  cursor: pointer;
-  background-color: var(--prime);
-  border-radius: 50%;
-  border: 0;
-  font-size: 3rem;
-  transition: all 250ms ease;
-  border: solid .3rem var(--prime);
-}
-
-dialog button.x {
-  position: absolute;
-  right: 2rem;
-  top: 1rem;
-  padding: .5rem 1rem;
-}
-
-dialog button.move-left {
-  position: absolute;
-  top: 50%;
-  left: 1rem;
-  padding: .5rem 1.3rem .6rem 1.3rem;
-}
-
-dialog button.move-right {
-  position: absolute;
-  top: 50%;
-  right: 1rem;
-  padding: .5rem 1.3rem .6rem 1.3rem;
-}
-
-dialog button:hover {
-  background-color: transparent;
-  color: var(--prime);
-}
-
-dialog img {
-  width: 100%;
-  height: auto;
-}
-
-dialog p {
-  text-align: center;
-  background-color: var(--prime);
-  margin: 0;
-  padding: 2rem;
-  color: var(--second);
-  font-size: 1.5rem;
-}
-
 @media only screen and (max-width: 1062px) {
   .form {
     flex-direction: column;
@@ -355,16 +275,8 @@ dialog p {
 }
 
 @media only screen and (max-width: 924px) {
-  .grid {
-    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
-  }
-
   .section {
     margin: 1.5rem;
-  }
-
-  .grid > img:hover {
-    box-shadow: .5rem .5rem var(--prime);
   }
 
   #about {
@@ -383,10 +295,6 @@ dialog p {
 }
 
 @media only screen and (max-width: 617px) {
-  .grid {
-    grid-template: repeat(6, 1fr) / 1fr;
-  }
-
   .section {
     margin: 1rem;
   }
@@ -401,19 +309,5 @@ dialog p {
   form input,
   form textarea {
     width: 100%;
-  }
-
-  dialog button {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-
-  dialog button.x {
-    padding: .7rem 1rem;
-  }
-
-  dialog button.move-left,
-  dialog button.move-right {
-    padding: .7rem 1.3rem .9rem 1.3rem;
   }
 }

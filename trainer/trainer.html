@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Krystyna Hilgner</title>
+  <link rel="stylesheet" href="trainer.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="../icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png">
+  <link rel="manifest" href="../icons/site.webmanifest">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <ul>
+        <li><a href="../#about" class="about-link">Über mich</a></li>
+        <li><a href="../trainer/trainer.html" class="gallery-link">Vokabeltrainer</a></li>
+        <a href="../#" class="nav-logo-link"><img src="../icons/android-chrome-192x192.png" alt="Logo" class="nav-logo"></a>
+        <li><a href="../#work" class="work-link">Meine Projekte</a></li>
+        <li><a href="#contact" class="contact-link">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Vokabeltrainer</h2>
+    <button type="button" id="list-words" class="words-btn">Deine Vokabeln</button>
+    <dialog>
+      <div class="words-btn-header">
+        <h2>Deine Vokabeln</h2>
+        <button>✕</button>
+      </div>
+    </dialog>
+    <button type="button" id="add-words" class="words-btn">Neuer Eintrag</button>
+    <dialog>
+      <div class="words-btn-header" id="add-words-header">
+        <h2>Neuer Eintrag</h2>
+        <button>✕</button>
+      </div>
+      <form class="add-words-form">
+        <label for="front">
+          Vorderseite:
+          <input type="text" name="front" id="front">
+        </label>
+        <label for="back">
+          Rückseite:
+          <input type="text" name="back" id="back">
+        </label>
+        <button type="button" class="add-words-button">Bestätigen</button>
+      </form>
+    </dialog>
+    <button type="button" id="train-words" class="words-btn">Trainieren</button>
+    <dialog>
+      <div class="words-btn-header">
+        <h2>Trainieren</h2>
+        <button>✕</button>
+      </div>
+      <p class="train-info">Du kannts <span class="card-length"></span> Karten trainieren</p>
+      <div class="train-display"></div>
+      <div class="train-button-wrapper"><button type="button" class="train-button">Weiter</button></div>
+    </dialog>
+  </main>
+  
+  <footer>
+    <p>Copyright (c) Krystyna Hilgner 2023</p>
+    <p>Developed by <a href="https://leandecks.github.io/">Leandecks</a></p>
+  </footer>
+ 
+  <script src="trainer.js"></script>
+</body>
+</html>
